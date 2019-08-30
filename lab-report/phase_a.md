@@ -24,4 +24,4 @@
 
 > 预期结果：机器通电，进行自检通过后，进入模拟器主界面。
 
-![Front Panel Image]()
+![Front Panel Image](https://raw.githubusercontent.com/yuetsin/62000H-notes/master/imgs/image.1.png)
