@@ -32,7 +32,9 @@
 
 ![Front Panel Image](https://raw.githubusercontent.com/yuetsin/62000H-notes/master/imgs/image.1.png)
 
-#### 手动操作部分
+#### 基础操作
+
+> 主要进行一些初步的恒压源／恒流源配置。
 
 ##### 设定输出电压
 
@@ -57,6 +59,7 @@
 ##### 设定输出电流
 
 - 8. 先决条件：先完成 1～3 步中的准备工作，且机器自检（SELF-TEST）过程无异常；
+
 - 9. 按下机器上的「CURR」按钮（见 Figure 1-3 上的按钮 4）；
   
   >  预期结果：机器主页面（MAIN PAGE）上的 C CURSOR（电流游标）闪烁。
@@ -68,8 +71,61 @@
 - 10. (b) 使用旋钮来调整输出数据每一位的具体数值，配合使用上下左右调整按钮来在位之间移动。在获得需要的数值之后，并按下 ENTER 按钮确认（见 Figure 1-3 上的按钮 7）；
   
   > 预期结果：电子显示屏上显示出对应的电流数值。
+
 - 11. 按下 ON/OFF 按钮（见 Figure 1-3 上的按钮 11）来应用刚刚的更改。
 
 > 预期结果：机器输出所设定好的电流。
 
+#### 使用 APG Interface
 
+>  APG Interface，全称是 Analog Programming Interface，其功能主要为设置要求理想数值、以及测量实际数值。
+
+* 15. 先决条件：先完成 1～3 步中的准备工作，且机器自检（SELF-TEST）过程无异常；
+
+* 16. 进入 System Config Setup Page（系统配置页面），依次按下「1」、「ENTER」按钮；
+  
+  > 预期结果：初始情况下，液晶屏幕显示如下图（Figure 3-5）所示。
+  
+  ![figure.3.5.png](https://raw.githubusercontent.com/yuetsin/private-image-repo/master/2019/09/04-18-05-00-figure.3.5.png)
+  
+  ##### 设定 APG 编程模式
+
+* 17. 对 APG VSET、APG ISET、APG VMEAS、APG IMEAS 四项，选定后可通过 0、1、2、3、4 按钮或旋钮来在五种模式中切换，其中每种模式的含义如下：
+      
+      * NONE：意为不使用编程功能。
+      
+      * Vref（0V～5V）：意为使用外部电压源作为编程设定，且取值范围在 0 到 5V 之间。
+      
+      * Vref（0V～10V）：意为使用外部电压源作为编程设定，且取值范围在 0 到 10V 之间。
+      
+      * Iref（4mA～20mA）：意为使用外部电流源作为编程设定，且取值范围在 4mA 到 20mA 之间。
+      
+      * Rref（0～5kΩ）：意为使用外部阻抗作为编程设定，且取值范围在 0 到 5kΩ 之间。
+  
+  > 提示：其中四种编程模式的关系均为简单线性关系。即，DC SOURCE SET 的值将在给定的取值范围内与输入信号构成线性相关关系。
+  
+  > 注意：其中 APG VMEAS 模式和 APG IMEAS 模式不可应用第五种模式（即 Rref（0～5kΩ）模式）。
+  
+  > 注意：在超过取值范围数值被给定的情况下，对实际情况不做任何保证。
+  
+  
+
+* 18. 使用上下光标选定 BUZZER 项之后，可将其值在 ON／OFF 之间切换。观察发生的现象。
+  
+  > 预期结果：
+  > 
+  > 在 BUZZER 项设定为 ON 的情况下，设备将会对用户对按钮和旋钮的操作给予蜂鸣音回馈，且在出现严重错误时长鸣（这也是默认设定）；
+  > 
+  > 在 BUZZER 项设定为 OFF 时，则任何情况下都不会发出蜂鸣音。
+
+* 19. 使用上下光标选定 POWER ON STATUS 项之后，可将其值在 DEFAULT、LAST TURN OFF STATUS 和 USER DEFINITION 之间切换。多次设定电压电流值并重启设备，观察发生的现象。
+  
+  > 预期结果：
+  > 
+  > 在 POWER ON STATUS 设定为 DEFAULT 的时候，每次系统启动时都会将电压设定为 0.00V，电流设定为 0.00A，OUTPUT（输出源）设定为 OFF；
+  > 
+  > 在 POWER ON STATUS 设定为 LAST TURN OFF STATUS 的时候，系统将记住上次系统启动时的 V、I、OUTPUT 值，并将其保留到下次开机；
+  > 
+  > 在 POWER ON STATUS 设定为 USER DEFINITION 的时候，每次系统启动时都会将用户预设好的 V、I、OUTPUT 值填充进设定界面。
+  
+  
