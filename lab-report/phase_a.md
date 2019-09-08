@@ -296,4 +296,50 @@
 
 > 注意：并联设备的最大数目为 10。
 
+#### 设备显示配置
+
+> 一些关于设备显示信息方式的配置实验。
+
+##### 亮度配置
+
+* 52. 先决条件：先完成 1～3 步中的准备工作，且机器自检（SELF-TEST）过程无异常；
+
+* 53. 进入 DISPLAY SETUP 页面，使用「上下左右」按钮将光标设定到 BRIGHTNESS 字段上；
+  
+  > 预期结果：BRIGHTNESS 字段值开始闪烁。
+
+* 54. 使用 0～2 号按钮或旋钮将 BRIGHTNESS 字段值在以下三项之中切换；
+  
+  > 可用的三个 BRIGHTNESS 枚举项：
+  > 
+  > 0 - BRIGHTNESS = HIGH，亮度高
+  > 
+  > 1 - BRIGHTNESS = NORMAL，亮度普通
+  > 
+  > 2 - BRIGHTNESS = DIMMED，亮度暗淡
+
+* 55. 按下 ENTER 按钮来确认更改，并按下 EXIT 按钮。
+  
+  > 预期结果：VFD 显示屏的亮度改变了。
+
+##### BANNER（警告横条）配置
+
+* 56. 先决条件：先完成 1～3 步中的准备工作，且机器自检（SELF-TEST）过程无异常；
+
+* 57. 进入 DISPLAY SETUP 页面，使用「上下左右」按钮将光标设定到 DISPLAY SELECTION 字段上；
+  
+  > 预期结果：DISPLAY SELECTION 字段值开始闪烁。
+
+* 58. 使用 0～3 号按钮或旋钮将 DISPLAY SELECTION 字段值在以下四项中切换；
+  
+  > 可用的四个 DISPLAY SELECTION 枚举项：
+  > 
+  > 0 - NONE，不显示任何警告信息
+  > 
+  > 1 - V/I LIMIT，仅标明电流和电压的合法范围
+  > 
+  > 2 - V/I/P PROTECT，除了标明电流和电压的合法范围之外，还在电流或电压超限时显示警告
+  > 
+  > 3 - V/I SLEWRATE，标明电流和电压摆率的最大值
+
 
