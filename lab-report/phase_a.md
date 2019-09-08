@@ -342,4 +342,42 @@
   > 
   > 3 - V/I SLEWRATE，标明电流和电压摆率的最大值
 
+* 59. 按下 ENTER 按钮来确认更改，并按下 EXIT 按钮。
+
+##### 数据采样次数配置
+
+> 设定更高的 READING AVERAGE TIMES 可以增大采样缓冲区，从而使得测得数据更为精准，但会降低反应速率；反过来，更低的 READING AVERAGE TIMES 代表着更小的采样缓冲区，也就意味着更快的反应速率和更粗略的数据结果。
+
+![屏幕快照 2019-09-08 下午2.53.08.png](https://raw.githubusercontent.com/yuetsin/private-image-repo/master/2019/09/08-14-53-15-%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-09-08%20%E4%B8%8B%E5%8D%882.53.08.png)
+
+* 60. 先决条件：先完成 1～3 步中的准备工作，且机器自检（SELF-TEST）过程无异常；
+
+* 61. 进入 DISPLAY SETUP 页面，使用「上下左右」按钮将光标设定到 READING AVERAGE TIMES 字段上；
+  
+  > 预期结果：READING AVERAGE TIMES 字段值开始闪烁。
+
+* 62. 使用 0～3 号按钮或旋钮将 READING AVERAGE TIMES 字段值在以下四项中切换；
+  
+  > 可用的四个 READING AVERAGE TIMES 枚举项：
+  > 
+  > 0 - 一次
+  > 
+  > 1 - 两次
+  > 
+  > 2 - 四次
+  > 
+  > 3 - 八次
+
+* 63. 按下 ENTER 按钮来确认更改，并按下 EXIT 按钮。
+  
+  > 预期结果：比较采样次数的差别所带来的更新频率的差别以及测量结果精确度的差别。
+  
+  > 注意：无论缓冲区的大小如何，面板屏幕的刷新始终保持 200ms 一次。
+
+![figure.3.59.png](https://raw.githubusercontent.com/yuetsin/private-image-repo/master/2019/09/08-14-57-04-figure.3.59.png)
+
+
+
+> DISPLAY SETUP 配置页面，对应着 52 ～ 63 步。
+
 
