@@ -244,4 +244,6 @@
   
   ![屏幕快照 2019-09-08 下午2.02.40.png](https://raw.githubusercontent.com/yuetsin/private-image-repo/master/2019/09/08-14-02-50-%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-09-08%20%E4%B8%8B%E5%8D%882.02.40.png)
 
+![屏幕快照 2019-09-08 下午1.55.47.png](https://raw.githubusercontent.com/yuetsin/private-image-repo/master/2019/09/08-14-03-56-%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-09-08%20%E4%B8%8B%E5%8D%881.55.47.png)
 
+> 步骤 20 ～ 43 的 OUTPUT SETUP 配置页面示意图（Figure 3-20）
